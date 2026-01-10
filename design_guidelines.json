@@ -1,0 +1,121 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "accent": "Italiana, serif"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-[1.1]",
+        "h2": "text-4xl md:text-5xl font-normal tracking-tight",
+        "h3": "text-2xl md:text-3xl font-normal",
+        "body_lg": "text-lg md:text-xl leading-relaxed font-light",
+        "body_base": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-xs tracking-[0.2em] uppercase font-bold text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#F9F8F6",
+        "foreground": "#2C2C2C",
+        "primary": "#5D6E5E",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#E8E6E1",
+        "secondary_foreground": "#2C2C2C",
+        "accent": "#D4AF37",
+        "muted": "#F0EFE9",
+        "border": "#E2E0D8"
+      },
+      "usage": {
+        "body_bg": "bg-[#F9F8F6]",
+        "text_primary": "text-[#2C2C2C]",
+        "text_secondary": "text-[#5D6E5E]",
+        "gold_accent": "text-[#D4AF37] or border-[#D4AF37]"
+      }
+    },
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-6 md:gap-12"
+    },
+    "visual_enhancers": {
+      "radius": "rounded-sm",
+      "shadows": {
+        "card": "shadow-[0_4px_20px_-4px_rgba(93,110,94,0.1)]",
+        "hover": "shadow-[0_8px_30px_-4px_rgba(93,110,94,0.15)]"
+      },
+      "borders": "border border-[#5D6E5E]/10",
+      "glass": "bg-[#F9F8F6]/80 backdrop-blur-md border-b border-[#5D6E5E]/10"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#5D6E5E] text-white hover:bg-[#4A584B] rounded-sm px-8 py-4 uppercase tracking-widest text-xs transition-all duration-300 ease-out hover:shadow-lg",
+      "secondary": "bg-transparent border border-[#5D6E5E] text-[#5D6E5E] hover:bg-[#5D6E5E] hover:text-white rounded-sm px-8 py-4 uppercase tracking-widest text-xs transition-all duration-300",
+      "ghost": "text-[#5D6E5E] hover:text-[#4A584B] hover:bg-[#5D6E5E]/5 uppercase tracking-widest text-xs"
+    },
+    "cards": {
+      "product": "group relative bg-white p-4 md:p-8 border border-transparent hover:border-[#5D6E5E]/20 transition-all duration-500 ease-out",
+      "feature": "bg-[#F0EFE9] p-8 md:p-12 rounded-sm"
+    },
+    "inputs": {
+      "default": "bg-transparent border-b border-[#5D6E5E]/30 focus:border-[#5D6E5E] rounded-none px-0 py-4 placeholder:text-[#5D6E5E]/40 focus:ring-0 transition-colors"
+    }
+  },
+  "layout_strategies": {
+    "grid_system": "Bento Grid Mode A (Tetris)",
+    "container_width": "max-w-[1600px] mx-auto",
+    "alignment": "Asymmetrical balance - offset text against large imagery"
+  },
+  "motion": {
+    "page_transition": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}",
+    "hover_lift": "hover:-translate-y-1 transition-transform duration-300",
+    "image_reveal": "overflow-hidden relative"
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1667488925642-70e7c8948d63?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxhcnRpc2FuYWwlMjBjYW5kbGUlMjBtYWtpbmclMjBoYW5kcyUyMHBvdXJpbmclMjB3YXh8ZW58MHx8fHwxNzY4MDQyODQ2fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Artisan pouring wax",
+      "category": "hero_background"
+    },
+    "story": {
+      "url": "https://images.unsplash.com/photo-1669151432266-cd991ea149ad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHxhcnRpc2FuYWwlMjBjYW5kbGUlMjBtYWtpbmclMjBoYW5kcyUyMHBvdXJpbmclMjB3YXh8ZW58MHx8fHwxNzY4MDQyODQ2fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Lighting a candle",
+      "category": "brand_story"
+    },
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1760602180499-382146d5eb02?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzb3klMjBjYW5kbGUlMjBqYXIlMjBjcmVhbSUyMHNhZ2UlMjBncmVlbiUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NjgwNDI4NDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Sage Green Canisters",
+        "category": "product_jar"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1646640983779-43cf0889c7c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBzb3klMjBjYW5kbGUlMjBqYXIlMjBjcmVhbSUyMHNhZ2UlMjBncmVlbiUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NjgwNDI4NDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Glass Jar Candle",
+        "category": "product_glass"
+      }
+    ],
+    "lifestyle": {
+      "url": "https://images.unsplash.com/photo-1622429420355-5677170f4fad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjb3p5JTIwbGl2aW5nJTIwcm9vbSUyMGFlc3RoZXRpYyUyMGNhbmRsZSUyMGxpZ2h0JTIwYmVpZ2V8ZW58MHx8fHwxNzY4MDQyODUzfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Cozy Room",
+      "category": "lifestyle_vibe"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Playfair Display' for all Headings (h1-h3). Do not use Inter.",
+    "Implement the 'Bento Grid' for the Shop page - do not use a standard uniform grid.",
+    "Use the 'Sage Green' (#5D6E5E) as the primary brand color, but keep backgrounds 'Warm Alabaster' (#F9F8F6).",
+    "Ensure all buttons are uppercase with wide tracking (tracking-widest).",
+    "For the 'Accessories' section, use the lifestyle images if specific product images are missing.",
+    "The 'Care Guide' should be a rich text page with large typography and 'lifestyle' images.",
+    "Use 'lucide-react' for icons, styled with the Gold Accent color (#D4AF37)."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include data-testid attributes.",
+    "Use sonner for toasts."
+  ]
+}
