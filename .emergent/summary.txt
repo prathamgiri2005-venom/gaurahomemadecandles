@@ -1,0 +1,141 @@
+<analysis>**original_problem_statement**: 
+Task: Build a premium e-commerce website for a brand called Gauri Homemade Candles.
+PRODUCT REQUIREMENTS: 
+- Aesthetic: Clean, organized marketplace layout similar to thecandlestore.in but with a single-brand, artisanal homemade feel. Warm neutrals, cream, sage green, and gold accents.
+- Pages: Home, Shop (filterable by Scent Category and Product Type), Accessories, Care Guide.
+- Product fields required: Scent Notes (Top, Heart, Base), Burn Time, Wax Type, and a Safety Tips tab on product pages.
+- Policies: Shipping (3-5 days), Returns (mandatory unboxing video within 24 hours), Eco-Commitment (Recycle your Jar).
+- Integration: Authentication and Razorpay placeholder.
+
+**User's preferred language**: English (INSTRUCT next agent to respond in English only)
+
+**what currently exists?** 
+A fully functional FastAPI + React e-commerce application tailored for Gauri Homemade Candles. It includes JWT authentication, dynamic routing for shop and product pages with required filters and tabs, a cart/checkout flow with a Razorpay placeholder, informational/policy pages, and an Admin Dashboard. The database was seeded with AI/Pexels generated dummy products, which the user has explicitly rejected.
+
+**Last working item**:
+    - Last item agent was working: Addressing the user's request to use their *actual* candles instead of the dummy products added via Pexels/scripts. The agent provided instructions on how to add them via the Admin panel but did not yet wipe the dummy data.
+    - Status: USER VERIFICATION PENDING / BLOCKED (Waiting for user details or for next agent to clear the dummy DB data).
+    - Agent Testing Done: N
+    - Which testing method agent to use? screenshot tool (to verify shop page once dummy data is removed and real data is added).
+    - User Testing Done: N
+
+**All Pending/In progress Issue list**:
+  Issue Detail:
+  - Issue 1: Remove Dummy Products and Add User's Real Products (P0)
+     - Attempted fixes: Agent added high-quality Pexels images, but the user explicitly stated i want add my candles not this. 
+     - Next debug checklist: Create a python script to drop/clear the  collection from MongoDB, then prompt the user to upload their actual assets/details or guide them to the Admin Dashboard.
+     - Why fix this issue and what will be achieved with the fix? It fulfills the user's latest explicit complaint to showcase their real inventory.
+     - Status: NOT STARTED
+     - Is recurring issue? N
+     - Should Test frontend/backend/both after fix? frontend
+     - Blocked on other issue: None.
+
+**In progress Task List**: 
+  Task Detail:
+  - Task 1: Replace placeholder products with user's actual inventory
+     - Where to resume: Clear the MongoDB  collection. Ask user for product names, prices, descriptions, scent notes, and actual image URLs, or guide them through the  portal.
+     - What will be achieved with this? App will be ready for the user's real business rather than displaying mock data.
+     - Status: IN PROGRESS
+     - Should Test frontend/backend/both after fix? frontend
+     - Blocked on something: User providing their product data/assets.
+
+**Upcoming and Future Tasks**:
+    Upcoming Tasks:
+    - P1: Implement actual Razorpay Checkout integration. User initially requested a placeholder, but this needs to be swapped to a real integration using  once the user provides Razorpay API keys.
+    - P2: Verify that the Returns policy page explicitly contains the UI/text for the mandatory unboxing video within 24 hours rule as requested in the PRD.
+    
+    Future Tasks:
+    - P2: Ensure Recycle your Jar initiative has a highly visible UI component on the Eco-Commitment page.
+
+**Completed work in this session**:
+- Backend FastAPI Setup with MongoDB connection ()
+- Frontend boilerplate, Tailwind config, and styling (, )
+- Auth implementation (JWT) (, , Login/Register pages)
+- Core Pages (Home, Shop with filters, Product Detail with tabs, Cart, Checkout)
+- Informational & Policy Pages (Care Guide, Accessories, About, Returns, Eco-Commitment)
+- Admin Dashboard for managing products and orders
+- Database Seed Scripts (, )
+
+**Earlier issues found/mentioned but not fixed**:
+   Issue 1:
+   - Debug checklist: N/A - The only outstanding issue is the user's rejection of the dummy products.
+   - Why to solve this issue and what will be achieved with this? N/A
+   - Should Test frontend/backend/both after fix: N/A
+   - Is recurring issue? N/A
+
+**Known issue recurrence from previous fork**:
+  - Issue recurrence in previous fork: N/A (Initial fork)
+  - Recurrence count: 0
+  - Status: NOT STARTED
+
+**Code Architecture**:
+
+
+**Key Technical Concepts**:
+FastAPI backend, React frontend, MongoDB database, TailwindCSS styling, JWT Authentication, Context API for state management.
+
+**key DB schema**:
+  - : {email, password, role}
+  - : {name, description, price, scent_category, product_type, scent_notes: {top, heart, base}, burn_time, stock, image_url}
+  - : {user_id, items, total_amount, status}
+
+**changes in tech stack**:
+  - None
+
+**All files of reference**: 
+  -  (Contains entire backend logic)
+  -  (Routing logic)
+  -  (E-commerce filtering logic)
+  -  (Product tabs logic)
+  -  (Script used to inject the dummy data that user hates)
+
+**Areas that need refactoring**: 
+  - : Currently holds all database models and routes in one single file. It is functional but might need splitting into routers if it grows further.
+
+**key api endpoints**:
+  - , 
+  - , 
+  - , 
+  - 
+
+**Critical Info for New Agent**: 
+- **DO NOT GENERATE DUMMY PRODUCTS**. The user is frustrated that AI-generated Pexels images and dummy candles were added. Your very first action should be to run a python script to delete all documents in the  MongoDB collection, then ask the user to provide their actual data or guide them to upload it via the Admin portal.
+- Admin credentials for testing:  / 
+- Razorpay is currently a mocked placeholder in the frontend Checkout component.
+
+**documents and test reports created in this job**:
+  -  (Consumed/viewed)
+  - 
+
+**Last 10 User Messages and any pending HUMAN messages**: 
+ - i want add my candles not this (Pending - User rejected dummy data, wants to add real candles)
+ - add photos (Completed - Agent added photos, but resulted in the complaint above)
+ - yes i want autentication razorpay placeholder for now yes yes (Completed)
+ - Start the task now!! (Completed)
+
+**Project Health Check**:
+- Broken: None
+- Mocked: Products (dummy DB data), Razorpay Payment Gateway
+
+**3rd Party Integrations**:
+ - Razorpay (Payments) — requires User API Key (Currently implemented as a UI placeholder only).
+
+**Testing status**:
+  - Testing agent used after significant changes: YES
+  - Troubleshoot agent used after agent stuck in loop: NO
+  - Test files created: 
+  - Known regressions: None, except user data mismatch.
+
+**Credentials to test flow**:
+Admin Email: 
+Admin Password: 
+
+**What agent forgot to execute**:
+- The agent forgot to ask the user for their actual product assets/details before running a bulk seeding script with random Pexels images, leading to rework.
+
+**Debugging checklist for current issue**:
+    Issue: Remove dummy products and ingest real data.
+    Backend files to check: 
+    - Create  to .
+    Database to check: MongoDB  collection.
+    </analysis>
