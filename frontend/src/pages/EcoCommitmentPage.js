@@ -6,7 +6,7 @@ const EcoCommitmentPage = () => {
     <div className="min-h-screen py-24">
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 lg:px-24">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-[1.1] mb-6" data-testid="eco-title">Our Eco Commitment</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-medium tracking-tight leading-[1.1] mb-6" data-testid="eco-title">Our Eco Commitment</h1>
           <p className="text-lg md:text-xl leading-relaxed font-light text-muted-foreground max-w-3xl mx-auto">
             Sustainability isn't just a buzzword—it's woven into every aspect of our business
           </p>

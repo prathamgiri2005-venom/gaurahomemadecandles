@@ -1,5 +1,6 @@
 import React from 'react';
 import { Leaf, Package, Shield } from 'lucide-react';
+import products from '../data/products';
 
 const CareGuidePage = () => {
   return (
@@ -7,8 +8,8 @@ const CareGuidePage = () => {
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 lg:px-24">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-medium tracking-tight leading-[1.1] mb-6" data-testid="care-guide-title">Candle Care Guide</h1>
-          <p className="text-lg md:text-xl leading-relaxed font-light text-muted-foreground max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-medium tracking-tight leading-[1.1] mb-6" data-testid="care-guide-title">Candle Care Guide</h1>
+          <p className="text-base md:text-lg leading-relaxed font-light text-muted-foreground max-w-3xl mx-auto">
             Maximize your candle's burn time and fragrance with our expert care tips
           </p>
         </div>
@@ -16,9 +17,9 @@ const CareGuidePage = () => {
         {/* Image */}
         <div className="mb-16">
           <img
-            src="https://images.unsplash.com/photo-1622429420355-5677170f4fad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjb3p5JTIwbGl2aW5nJTIwcm9vbSUyMGFlc3RoZXRpYyUyMGNhbmRsZSUyMGxpZ2h0JTIwYmVpZ2V8ZW58MHx8fHwxNzY4MDQyODUzfDA&ixlib=rb-4.1.0&q=85"
-            alt="Cozy room with candles"
-            className="w-full h-[500px] object-cover rounded-sm"
+            src={products[2].image}
+            alt="Gaura candle burning"
+            className="w-full h-[400px] object-cover"
           />
         </div>
 

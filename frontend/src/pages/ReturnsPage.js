@@ -30,7 +30,7 @@ const ReturnsPage = () => {
           <section>
             <h2 className="text-2xl font-normal mb-4 text-[#5D6E5E]">How to File a Claim</h2>
             <ol className="list-decimal list-inside space-y-3 text-base leading-relaxed ml-4">
-              <li>Email us at support@gaurihomemadecandles.com with your order number</li>
+              <li>Email us at support@gaurahomemadecandles.com with your order number</li>
               <li>Attach your unboxing video and clear photos of the damage</li>
               <li>Our team will review and respond within 48 hours</li>
               <li>Approved claims will receive a replacement or full refund</li>
@@ -77,7 +77,7 @@ const ReturnsPage = () => {
           <section>
             <h2 className="text-2xl font-normal mb-4 text-[#5D6E5E]">Contact Us</h2>
             <p className="text-base leading-relaxed">
-              For any questions about our returns policy, please email us at <strong>support@gaurihomemadecandles.com</strong>
+              For any questions about our returns policy, please email us at <strong>support@gaurahomemadecandles.com</strong>
             </p>
           </section>
         </div>
