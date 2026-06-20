@@ -6,7 +6,7 @@ import products from '../data/products';
 const HomePage = () => {
   const [heroLoaded, setHeroLoaded] = useState(false);
   const heroProduct = products[3]; // Gaura Signature Jar
-  const featured = [products[0], products[2], products[4]];
+  const featured = [products[5], products[7], products[9]];
 
   return (
     <div className="min-h-screen">
