@@ -25,7 +25,7 @@ Build a premium e-commerce website for "Gaura Homemade Candles" (originally "Gau
 - [x] Brand name updated to "Gaura" everywhere
 - [x] Page title & meta description updated
 
-## 15 Products (User's Real Candles)
+## 19 Products (User's Real Candles)
 1. Pink Hearts Gel Candle — Gel Candles — 30+ hours
 2. Heart Bowl Candle — Bowl Candles — 40+ hours
 3. Gold Flake Terracotta — Bowl Candles — 35+ hours
@@ -41,6 +41,10 @@ Build a premium e-commerce website for "Gaura Homemade Candles" (originally "Gau
 13. Pink Heritage Jar — Jar Candles — 40+ hours
 14. Wooden Tumbler Set — Bowl Candles — 30+ hours
 15. Rajasthani Mandala Tin — Tin Candles — 35+ hours
+16. Maroon Heritage Jar — Jar Candles — 40+ hours
+17. Silver Glitter Terracotta — Bowl Candles — 30+ hours
+18. Sage Heritage Jar — Jar Candles — 40+ hours
+19. Blue Rose Candle — Sculpted Candles — 25+ hours
 
 ## Backlog / Future Tasks
 - P1: User mentioned "more photos coming" — add new products when provided
