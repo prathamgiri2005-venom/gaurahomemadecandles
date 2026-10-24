@@ -189,9 +189,6 @@ const products = [
     wax: "Coloured Soy Wax",
     burnTime: "25+ hours",
   },
-];
-
-export default products;
   {
     id: 20,
     name: "Evil Eye Bowl Candle",
@@ -332,3 +329,6 @@ export default products;
     wax: "100% Natural Soy Wax",
     burnTime: "35+ hours",
   },
+];
+
+export default products;
